@@ -1,0 +1,35 @@
+{
+  "name": "steam-price-api",
+  "version": "1.2.2",
+  "description": "Gets market information from steam servers",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThunbergOlle/steam-price.git"
+  },
+  "keywords": [
+    "steam market",
+    "market api steam",
+    "steam-pricing",
+    "steam-market-api",
+    "steam-market-pricing",
+    "steam prices",
+    "csgo item prices",
+    "steam item prices",
+    "steamapi",
+    "steamcommunity",
+    "steam market pricing"
+  ],
+  "author": "OlleThunberg <olle.thunberg03@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThunbergOlle/steam-price/issues"
+  },
+  "homepage": "https://github.com/ThunbergOlle/steam-price#readme",
+  "dependencies": {
+    "request": "^2.87.0"
+  }
+}
