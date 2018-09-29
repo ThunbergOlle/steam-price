@@ -1,5 +1,5 @@
-# Steam-price-api
-This is a module developed by OlleThunberg that let's you easily check ingame items values.
+# Steam-price-API
+This is a module developed by OlleThunberg that lets you easily check in-game items values.
 
 **Install**
 ```js
