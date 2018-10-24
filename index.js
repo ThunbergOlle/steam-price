@@ -17,6 +17,7 @@ exports.getprice = function(appid, itemname, callback, currency){
         }
     }, function(err, res, body){
         if(err) callback(err);
+        if(body.success === false) callback("Request wasn't successful. Try checking your variables. Message: " + JSON.stringify(body));
         callback(null, res, body);
     });
 }
@@ -42,7 +43,6 @@ exports.getprices = function(appid, itemname, callback, currency){
         }
     }, function(err, res, body){
         if(err) callback(err);
-        console.log(body);
         tmpres[itemname] = body;   
         if(Object.keys(tmpres).length == itemname.length){
             callback(tmpres);
