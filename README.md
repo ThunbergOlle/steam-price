@@ -14,7 +14,7 @@ const steamprice = require('steam-price-api');
 ## Methods
 ```js
 //For one item
-steamprice.getprice(appid, itemname, function(){}, currency);
+steamprice.getprice(appid, itemname, currency);
 ```
 - `appid` : The games appid. (730 = CSGO)
 - `itemname` : The items market name. (Example: Clutch Case)
@@ -24,9 +24,9 @@ steamprice.getprice(appid, itemname, function(){}, currency);
 
 ### Get One Item: 
 ```js
-steamprice.getprice(730, 'Clutch Case', function(err,data){
-    console.log(data.body);
-});
+steamprice.getprice(730, 'Clutch Case', '1').then(data => {
+    console.log(data);
+}).catch(err => console.log(err));
 ```
 **Output**
 ```json
@@ -45,10 +45,9 @@ const items = [
     'Clutch Case Key',
     'Clutch Case'
 ]
-steamprice.getprices(730, items, function(err, data){
+steamprice.getprices(730, items, '1').then(data => {
     console.log(data);
-});
-
+}).catch(err => console.log(err));
 ```
 **Output**
 ```json

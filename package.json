@@ -1,6 +1,6 @@
 {
   "name": "steam-price-api",
-  "version": "1.2.3",
+  "version": "2.0.0",
   "description": "Gets market information from steam servers",
   "main": "index.js",
   "scripts": {
