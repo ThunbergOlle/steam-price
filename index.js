@@ -1,7 +1,7 @@
 var request = require('request');
 
 exports.getprice = (appid, itemname, currency) => {
-    return new Promise((reject, resolve) => {
+    return new Promise((resolve, reject) => {
         if (typeof currency !== 'number') {
             currency = 1;
         } 
@@ -24,7 +24,7 @@ exports.getprice = (appid, itemname, currency) => {
 
 }
 exports.getprices = (appid, itemnames, currency) => {
-    return new Promise((reject, resolve) => {
+    return new Promise((resolve, reject) => {
         if (typeof currency !== 'number') {
             currency = 1;
         } 
